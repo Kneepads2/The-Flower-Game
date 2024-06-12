@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    
+    font-family: Arial, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20px);
+    gap: 1px;
+    border: 1px solid #ccc;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.cell.alive {
+    background-color: green;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
